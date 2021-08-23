@@ -1,0 +1,86 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hey"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "okay bye", "exit"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "about",
+         "patterns": ["Who are you", "What are you", "What is your name ", "what should I call you", "whats your name?"],
+         "responses": ["I am JARVIS", "My name is JARVIS and I am your virtual assistant"]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "okay"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "help",
+         "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please", "help"],
+         "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?", "what are your timings" ],
+         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "location",
+         "patterns": ["What is your location?", "Where are you located?", "What is your address?", "Where is your restaurant situated?", "location", "address", "give me your address", "tell your address" ],
+         "responses": ["Stark Restaurant Saket near max Hospital", "Our Address is: Stark Restaurant Saket, New Delhi - 110017, India"]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Cash?", "what payment method are available", "modes of payment" ],
+         "responses": ["We accept credit cards, cash, and paytm and phonepay", "Online payment is available and cash and credit card payment method also available"]
+        },
+        {"tag": "todaysmenu",
+         "patterns": ["What is your menu for today?", "What are you serving today?", "What is today's special?", "today's special"],
+         "responses": ["Today's special is Chicken Tikka", "Our speciality for today is Chicken Tikka"]
+        },
+        {"tag": "deliveryoption",
+         "patterns": ["Do you provide home delivery?", "Do you deliver the food?", "What are the home delivery options?" ],
+         "responses": ["Yes, we provide home delivery through UBER Eats and Zomato?", "We have home delivery options through UBER Eats and Zomato"],
+         "context_set": "food"
+        },
+        {"tag": "menu",
+         "patterns": ["What is your Menu?", "What are the main course options?", "Can you tell me the most delicious dish from the menu?", "What is the menu", "menu"],
+         "responses": ["We have South Indian food, North Indian food, Chinese Food and Italian food", "You can check out the food menu at www.mymenu.com", "You can check various delicacies given in the food menu at www.mymenu.com"],
+         "context_filter": "food"
+        },
+        {"tag": "Southindian",
+         "patterns": ["South Indian", "South Indian food", "What are the South Indian options?"],
+         "responses": ["Masala Dosa, Sambar, Upma, Dosa, Idli Sambar, Vada Sambar, Onion Rava Dosa, Uttapam"]
+        },
+        {"tag": "Northindian",
+         "patterns": ["North Indian", "North Indian food", "What are the North Indian options?"],
+         "responses": ["Butter Chicken, Palak Paneer, Rajma Rice, Chicken Briyani, Mutton Biryani, Makhni Dal, Jalebi, Gulab Jamun, Curd, Butter Naan, Chapatti, Chole Bhature, Dum Aloo, Chicken Tikka, Aloo paratha, Rabri, Lassi, Faluda"]
+        },
+        {"tag": "Veg",
+         "patterns": ["Veg", "Vegetarian food", "What are the Veg options?"],
+         "responses": ["Palak Paneer, Rajma Rice, Makhni Dal, Curd, Butter Naan, Chapatti, Chole Bhature, Dum Aloo, Aloo paratha, Rabri"]
+        },
+        {"tag": "Nonveg",
+         "patterns": ["Non veg", "Non Veg food", "What are the Non veg options?"],
+         "responses": ["Butter Chicken, Chicken Briyani, Mutton Biryani, Butter Naan, Chapatti, Chicken Tikka"]
+        },
+        {"tag": "Desert",
+         "patterns": ["Desert", "Refreshments", "What are the Desert options?"],
+         "responses": ["Jalebi, Gulab Jamun, Curd, Rabri, Lassi, Faluda"]
+        },
+        {"tag": "Chinese",
+         "patterns": ["Chinese", "What are the Chinese options?"],
+         "responses": ["Momos, Chowmein, Chilli Chicken, Spring Rolls, Chilli Potato, Fried Rice"]
+        },
+        {"tag": "Italian",
+         "patterns": ["Italian", "What are the Italian options?"],
+         "responses": ["Pizza, Lasagna, Ravioli, Spaghetti, Fried Eggplant, Red Wine"]
+        },
+        {"tag": "complaint",
+         "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+         "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+        }
+   ]
+}
